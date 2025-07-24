@@ -1,5 +1,5 @@
  
- 
+ /* Start Header Section */
  * {
   margin: 0;
   padding: 0;
@@ -54,6 +54,7 @@ body {
   justify-content:center;
   gap: 40px;
   flex-wrap: wrap;
+  
 }
 .text h1 {
   font-size: 48px;
@@ -61,7 +62,7 @@ body {
   line-height: 1.2;
 }
 .text h1 .highlight {
-  color: orange;
+  color: #E95A08;
 }
 .text p {
   margin-top: 20px;
@@ -78,7 +79,7 @@ body {
 }
 
 
-/* === Base styles (desktop & all sizes) === */
+/*desktop & all sizes*/
 
 body {
   margin: 0;
@@ -149,7 +150,90 @@ body {
 }
 
 
-/* ========= Mobile View (max-width: 768px) ========== */
+
+
+/* ----------  Start Our PLANTS SECTION STYLES ---------- */
+
+
+.plants {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.plants-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.plants-header .highlight {
+  color: #E95A08;
+  font-weight: bold;
+}
+
+.plants-header p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card button {
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card button:hover {
+  background-color: #e07000;
+}
+
+
+
+
+/* Small Device Responsive Starts */
+
+
 @media (max-width: 768px) {
 
   /* Hide all navbar items except cart */
@@ -202,4 +286,45 @@ body {
     height: auto;
   }
 }
+
+
+/* ---RESPONSIVE: PLANTS SECTION --- */
+
+@media (max-width: 768px) {
+  .plants {
+    padding: 30px 10px;
+  }
+
+  .plants-header h2 {
+    font-size: 24px;
+  }
+
+  .plants-header p {
+    font-size: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 column for mobile */
+    gap: 15px;
+  }
+
+  .product-card {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+  }
+
+  .product-card button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
 
