@@ -228,11 +228,63 @@ body {
   background-color: #e07000;
 }
 
+/* Flower & Plant Lover Section */
+
+.plant-lover {
+  padding: 60px 20px;
+  background-color: #f5f7fb;
+}
+
+.plant-lover-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  position: relative;
+}
+
+.lover-image-wrapper {
+  position: relative;
+  max-width: 400px;
+}
+
+.lover-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.lover-badge {
+  position: absolute;
+  top: -90px;
+  left: 400px;
+  transform: translateX(-50%);
+  width: 200px;
+  z-index: 2;
+}
+
+
+.lover-text {
+  max-width: 500px;
+}
+
+.lover-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.lover-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
 
 
 
 /* Small Device Responsive Starts */
 
+/* Header Section */
 
 @media (max-width: 768px) {
 
@@ -326,5 +378,33 @@ body {
     font-size: 14px;
   }
 }
+
+/* Flower & Plant Responsive */
+
+@media (max-width: 768px) {
+  .plant-lover-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lover-badge {
+    display: none;
+  }
+
+  .lover-text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .lover-text h2 {
+    font-size: 26px;
+  }
+
+  .lover-text ul {
+    padding-left: 15px;
+    text-align: left;
+  }
+}
+
 
 
