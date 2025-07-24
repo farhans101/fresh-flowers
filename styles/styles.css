@@ -178,7 +178,6 @@ body {
   line-height: 1.5;
 }
 
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -282,6 +281,7 @@ body {
   line-height: 1.6;
 }
 
+
 /* Latest Deal Section */
 
 .deal-section {
@@ -364,6 +364,7 @@ body {
   text-decoration: none;
 }
 
+
 /*  Colorful Brunch Section */
 
 .subscribe-section {
@@ -436,15 +437,85 @@ body {
   background-color: orange;
 }
 
+/* Footer Section Starts */
+.footer {
+  background-color: #f9fbff;
+  padding: 50px 160px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 130px;
+}
+
+.footer-logo-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-logo-section p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  gap: 120px;
+  min-width: 300px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-links ul li a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.footer-links ul li a:hover {
+  color: orange;
+}
+
+.footer-social {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-social a img {
+  width: 30px;
+  height: 30px;
+}
 
 
 /* Small Device Responsive Starts */
 
 /* Header Section */
 
+
 @media (max-width: 768px) {
 
-  /* Hide all navbar items except cart */
+
   .navbar ul li {
     display: none;
   }
@@ -465,7 +536,6 @@ body {
     font-size: 18px;
   }
 
-  /* Optional: Align logo and cart side by side */
   .header .container {
     display: flex;
     justify-content: space-between;
@@ -476,7 +546,6 @@ body {
     height: 40px;
   }
 
-  /* Optional: Banner layout adjust */
   .banner-content {
     flex-direction: column-reverse;
     align-items: center;
@@ -496,6 +565,7 @@ body {
 }
 
 
+
 /* ---RESPONSIVE: PLANTS SECTION --- */
 
 @media (max-width: 768px) {
@@ -512,7 +582,7 @@ body {
   }
 
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 column for mobile */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
@@ -534,6 +604,7 @@ body {
     font-size: 14px;
   }
 }
+
 
 /* Flower & Plant Responsive */
 
@@ -562,6 +633,7 @@ body {
   }
 }
 
+
 /* Latest Deals Responsive */
 
 @media (max-width: 768px) {
@@ -587,6 +659,51 @@ body {
     padding: 4px 10px;
   }
 }
+
+
+/* Footer Responsive */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-logo-section {
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer-links ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin: 16px 0;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+
+
+
 
 
 
